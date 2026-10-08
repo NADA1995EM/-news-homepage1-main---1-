@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+            width: 95vh;
+            height: 100vh;
+        }
+        .parent{
+           width: 100%;
+           height: 100%;
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill ,1fr);
+            grid-template-rows: repeat(auto-fill ,1fr);
+            gap: 15px;
+            grid-template-areas:
+             " h h h"
+             " n n m "
+             " i s m"
+             " f f f ";
+             height:100%;
+            
+
+        }
+        
+        .header {
+            
+            grid-area: h;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+         li{
+             display: flex;
+             color: gray;
+           list-style:none;
+           gap: 10px;
+        }
+       .nav{
+        background-color: rgb(58, 33, 33);
+        grid-area: n;
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+
+        
+       
+    
+
+       }
+       .item{
+        background-color: rgb(255, 255, 255);
+        font-size: 23px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
+        grid-area: i;
+        
+       }
+       .main{
+        background-color: rgb(14, 14, 14);
+
+        grid-area: m;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        display: grid;
+        grid-column: auto;
+        padding: 5px;
+        
+       }
+       .side{
+        background-color: rgb(253, 253, 253);
+        grid-area: s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+
+       }
+       .footer{
+         grid-area: f;
+         display: grid;
+         background-color: rgb(4, 34, 63);
+          height: 40%;
+        
+       }
+       
+       
+ .inner{
+    
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+        background-color: rgb(96, 185, 140);
+       height: 40%;
+        
+    
+       }
+      
+       .photo{
+        display: flex;
+        justify-content: start;
+     height: 100%;
+     grid-area: a;
+
+       }
+       .ii{
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items:start;
+        height: 400px;
+        width: 200px;
+       }
+       
+       .botstyle{
+        
+        background-color: rgb(228, 88, 88);
+        height: 35px;
+        width: 150px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        padding-bottom: 5px;
+       }
+      
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header"> <h1>w.</h1>
+        <li>
+    <ul>Home</ul>
+    <ul>New</ul>
+    <ul>Populer</ul>
+    <ul>Trending</ul> 
+    <ul>Categories</ul>
+
+</li></div>
+<div class="nav">
+        <img  src ="C:\Users\zakar\OneDrive\قمري_files\Desktop\news-homepage-main\assets\images\image-web-3-desktop.jpg" alt="" class="nav"></div>
+        <div class="item"><h1> The Bright Future of Web 3.0</h1></div>
+        <div class="main">
+            <h1 style="color: rgb(236, 233, 67);">NEW</h1>
+            <div>
+                 <h3>Hydrogen VS Electric Cars</h3>
+                  <p>  Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+             <div>
+                <h3>The Downsides of AI Artistry </h3>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+              <div>
+                <h3> Is VC Funding Drying Up?</h3>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        
+        </div>
+        <div class="side"><p> We dive into the next 
+            evolution of the web that claims to put the
+             power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?</p>
+            <button class="botstyle">READ MORE</button></div>
+        <div class="footer"> 
+            <div class="inner "> 
+               
+                <div class="photo">
+                    <img src="c:\Users\zakar\OneDrive\قمري_files\Desktop\news-homepage-main\assets\images\image-retro-pcs.jpg" alt=""></div>
+
+                <div  class="ii">
+             <div > <h1>01</h1>  </div>
+                  
+               <div>
+                <h2>Riviving Reto PCs</h2>
+            </div>
+             <div>
+                <p>What happens when old PCs are given modern upgrades?</p></div>  
+             </div>
+
+        </div>
+         
+           
+             </div>
+
+        </div>
+    
+</body>
+</html>
